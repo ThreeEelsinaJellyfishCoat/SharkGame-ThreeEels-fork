@@ -102,7 +102,8 @@ SharkGame.FunFacts = {
     },
 
     resourceBased: {
-        // add fish facts at some point
+        fish: ["To put on a burst of speed, fish curl their bodies into a C-shape and thrash their tails one or two times to thrust themselves forward.",],
+        // i added a fish fact! -- Three Eels
         shark: [
             "There are many species of sharks that investigate things with their mouths. This can end badly for the subject of investigation.",
             "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
