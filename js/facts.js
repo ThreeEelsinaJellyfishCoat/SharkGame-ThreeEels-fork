@@ -102,7 +102,7 @@ SharkGame.FunFacts = {
     },
 
     resourceBased: {
-        fish: ["To put on a burst of speed, fish curl their bodies into a C-shape and thrash their tails one or two times to thrust themselves forward.",],
+        fish: ["To put on a burst of speed, fish curl their bodies into a C-shape and thrash their tails one or two times to thrust themselves forward."],
         // i added a fish fact! -- Three Eels
         shark: [
             "There are many species of sharks that investigate things with their mouths. This can end badly for the subject of investigation.",
