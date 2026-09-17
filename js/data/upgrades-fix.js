@@ -5173,6 +5173,7 @@ SharkGame.Upgrades = {
             required: {
                 upgrades: ["raiderTruce"],
             }, // takes place in the safehold
+	},
 //////// ACT TWO: the safehold //////////////
 	raiderTruce: {
             name: "Raider Truce",
@@ -5396,7 +5397,7 @@ SharkGame.Upgrades = {
             required: {
 		upgrades: ["theCrisis"],
 	    },
-            // effect: {},
+        // effect: {},
 	    // events: [],
         },
 	seaSkyAlliance: {
@@ -5435,7 +5436,7 @@ SharkGame.Upgrades = {
 		seagrassFarm: 7,
 		exchangeStation: 7,
 	    },
-        },
+    },
 	fullGatemaster: {
             name: "Second Ruined Structure Exploration",
             desc: "Organise a second expedition into the structure with the gate to see what we've missed in there.",
