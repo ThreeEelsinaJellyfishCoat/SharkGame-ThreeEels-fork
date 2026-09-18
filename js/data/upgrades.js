@@ -5247,6 +5247,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrade: ["crystalTalons"],
+                seen: ["caracara"],
             },
             effect: {
                 incomeMultiplier: {
