@@ -532,11 +532,11 @@ SharkGame.HomeMessages = {
                 message: "A raging world's wrath. You feel it all.<br><span class='smallDesc'>...is that light...?</span>",
                 // it's calling...
             },
-            /* {
+            {
                 name: "shore-sandstorm-escape-attempt",
-                unlock: { upgrade: ["justPushFurtherLol"] }, // once upgrades are fixed, change it to "flee"
+                unlock: { upgrade: ["flee"] }, // previously "justPushFurtherLol"
                 message: "You and the ragged frenzy clear the gap. Your welcoming sight is a clear space of water.<br>It spans wide at the sides, but in front of you is an insurmountable wall of sand.",
-            }, */
+            },
             {
                 name: "shore-discover-driftwood",
                 unlock: { upgrade: ["sunObservation"] },
