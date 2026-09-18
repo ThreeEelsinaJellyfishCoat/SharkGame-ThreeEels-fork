@@ -5214,7 +5214,7 @@ SharkGame.Upgrades = {
             effectDesc: "Our exchanged research resulted in frenzy members, puppets, and stabilizers being four times as effective. Things are looking up.",
             cost: {
                 science: 5e6,
-                crystals: 600,
+                crystal: 600,
                 fish: 1200,
             },
             required: {
@@ -5410,7 +5410,7 @@ SharkGame.Upgrades = {
                 driftwood: 2e5, // useful material
                 hardbark: 3e5, // even more useful material
                 seagrass: 4e5, // they love seagrass
-                crystals: 1e5, // crystals kinda fascinate them
+                crystal: 1e5, // crystals kinda fascinate them
             },
             required: { upgrades: ["theSacrifice"] },
             effect: {
