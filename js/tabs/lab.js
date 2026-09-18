@@ -167,6 +167,13 @@ SharkGame.Lab = {
                         message = "The scientists are out of ideas, but there are always more discoveries to be made.";
                     }
                     break;
+                case "shore":
+                    if (res.getTotalResource("scientist") < 1) {
+                        message = "We finally have a place to rest. Now what?";
+                    } else {
+                        message = "The scientists are out of ideas, but there are always more discoveries to be made.";
+                    }
+                    break;
                 case "volcanic":
                     message = "The crabs are out of ideas, but there are always more discoveries to be made.";
                     break;
