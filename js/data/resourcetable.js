@@ -843,7 +843,7 @@ SharkGame.ResourceTable = {
         name: "caracaras",
         singleName: "caracara",
         desc: "Prideful denizens of the beyond.",
-        color: "#604020",
+        color: "#363840", // previously 604020
         income: {
             crystal: 1,
         },
@@ -868,13 +868,13 @@ SharkGame.ResourceTable = {
         },
     },
 
-    seagrassPicker: {
+    seagrassPicker: { // previously coralPicker
         name: "seagrass pickers",
         singleName: "seagrass picker",
         desc: "Crablike puppets cutting seagrass.",
-        color: "#99004D",
+        color: "#468249", // previously #99004D
         income: {
-            seagrass: 3,
+            seagrass: 3, // used to be coral
         },
     },
 
@@ -906,8 +906,8 @@ SharkGame.ResourceTable = {
         color: "#CCCC00",
         income: {
             sand: -12.5,
-            roughSand: -0.02,
-            seagrass: 3.5,
+            roughSand: -0.0002,
+            seagrass: 1,
             crystal: 1.5,
         },
     },
