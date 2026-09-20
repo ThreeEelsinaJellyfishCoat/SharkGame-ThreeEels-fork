@@ -3163,15 +3163,15 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
+                { resource: "crab", costFunction: "constant", priceIncrease: 1 },
                 { resource: "seagrass", costFunction: "linear", priceIncrease: 2 },
-                { resource: "coral", costFunction: "linear", priceIncrease: 4 },
+                // { resource: "coral", costFunction: "linear", priceIncrease: 4 },
             ],
             max: "stabilizer",
             prereq: {
                 resource: {
                     crab: 1,
-                    coral: 4,
+                    // coral: 4,
                     seagrass: 2,
                 },
                 upgrade: ["agriculture"],
@@ -3188,7 +3188,7 @@ SharkGame.HomeActions = {
                 "Area One's status: on the job!",
                 "Be brave, crabs, and be proud!",
             ],
-            helpText: "Provide a crab with coral and seagrass to plant.",
+            helpText: "Provide a crab with seagrass to plant.",
         },
         getBrood: {
             name: "Form crab brood",
@@ -3273,7 +3273,7 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
                 { resource: "science", costFunction: "linear", priceIncrease: 15 },
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 4 },
+                { resource: "hardbark", costFunction: "constant", priceIncrease: 4 },
             ],
             max: "mentor",
             prereq: {
@@ -3690,7 +3690,7 @@ SharkGame.HomeActions = {
             multiOutcomes: [
                 "//*to be written in future*//",
             ],
-            helpText: "Reconstruct the Barrage Braver of beyondwalker legend.",
+            helpText: "Reconstruct the Barrage Braver of mudskipper tales.",
         }, // end of unique code
         getGatemasterPuppet: {
             name: "Scavenge Gatemaster",
@@ -3711,7 +3711,7 @@ SharkGame.HomeActions = {
                     sharkonium: 25,
                     crystal: 5,
                 },
-                upgrade: ["gateDiscovery"],
+                upgrade: ["fullGatemaster"],
             },
             outcomes: [
                 "//*to be written in future*//",
@@ -3797,14 +3797,14 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "driftwood", costFunction: "linear", priceIncrease: 50 },
                 { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-                { resource: "coral", costFunction: "linear", priceIncrease: 15 },
+                // { resource: "coral", costFunction: "linear", priceIncrease: 15 },
             ],
             max: "exchangeStation",
             prereq: {
                 resource: {
                     driftwood: 50,
                     sharkonium: 25,
-                    coral: 15,
+                    // coral: 15,
                 },
                 upgrade: ["platformExpansion"],
             },
