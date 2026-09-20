@@ -4546,6 +4546,7 @@ SharkGame.Upgrades = {
             cost: {
                 fish: 250,
             },
+            effect: { incomeMultiplier: { roughSand: 0.5 } },
             events: ["shoreGiveSeagrass"],
         },
         crystalBite: {
@@ -4958,13 +4959,13 @@ SharkGame.Upgrades = {
             name: "Puppet Teaching",
             desc: "Now that we're (relatively) safe, the mudskippers want to try something from their oral tales.",
             researchedMessage: "Study and research on puppet piloting has not only made the puppets twice as fast, but has also resulted in puppet mentoring. Not bad.",
-            effectDesc: "All puppets run twice as fast. It's surprising how well they work! Oh, and puppet mentors can be trained now.",
+            effectDesc: "All puppets run twice as fast. It's surprising how well they can work! Oh, and puppet mentors can be trained now.",
             cost: {
                 science: 5000,
                 hardbark: 150,
             },
             required: {
-                upgrades: ["fixModels", "farExploration"],
+                upgrades: ["raiderTruce"],
                 seen: ["caracara", "hardbarkSmith"],
             },
             effect: {
@@ -5041,7 +5042,7 @@ SharkGame.Upgrades = {
                 upgrades: ["sunObservation"],
             },
             // effect: { },
-        }, // figure out an event that gives seagrass and driftwood
+        },
         mudskipperContact: {
             name: "Mudskipper Contact",
             desc: "Capture and speak to one of these skittish brown fish that go above water.",
@@ -5080,11 +5081,11 @@ SharkGame.Upgrades = {
             name: "Agriculture",
             desc: "The rays and crabs have noticed that the sand around these strange green growths are oddly stable.",
             researchedMessage:
-                "It seems like this seagrass gets all into the sand and supports its integrity. And guess what works better than some seagrass? A whole FARM'S worth of seagrass!.",
+                "It seems like this seagrass gets all into the sand and supports its integrity. We're gonna need a lot of this stuff, so we've delegated crabs to plant it and plots of sand to mass-grow it in.",
             effectDesc: "Seagrass farms and stabilizer crabs are now available. Stability!",
             cost: {
-                sand: 80000,
-                seagrass: 200,
+                sand: 30000,
+                seagrass: 150,
             },
             required: {
                 upgrades: ["seabedGeology"],
@@ -5093,7 +5094,7 @@ SharkGame.Upgrades = {
         sunObservation: {
             name: "Sun Observation",
             desc: "We must determine what is with the very bright glare in the sky above the water.",
-            researchedMessage: "Shark science - not mudskipper stories - has discovered the sun! It has also discovered that looking directly into the sun hurts.",
+            researchedMessage: "Shark science has discovered the sun! It has also discovered that looking directly into the sun hurts.",
             effectDesc:
                 "Stabilizer crabs are twice as effective. Is a sun's worth many fish? We can see a sun, but where is it really? And what is it made of?",
             cost: {
@@ -5152,6 +5153,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["exploration"],
+                seen: ["safeholdSentinel"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5297,6 +5299,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["beyondwalkerPairing"],
+                seen: ["retrievalDuo"],
             },
             // effect: {},
         },
@@ -5324,13 +5327,14 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
+                seen: ["barrageBraver"],
             },
             effect: {
                 addIntelIncome: {
-                    seagrassPicker: 0.005,
-                    driftwoodSnarer: 0.005,
-                    shoreQueller: 0.005,
-                    hardbarkSmith: 0.005,
+                    seagrassPicker: 0.000005,
+                    driftwoodSnarer: 0.000005,
+                    shoreQueller: 0.000005,
+                    hardbarkSmith: 0.000005,
                 },
                 incomeMultiplier: {
                     seagrassPicker: 2,
@@ -5352,6 +5356,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
+                seen: ["intel"],
             },
             effect: {},
             events: [],
