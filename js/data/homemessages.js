@@ -538,6 +538,11 @@ SharkGame.HomeMessages = {
                 message: "You and the ragged frenzy clear the gap. Your welcoming sight is a clear space of water.<br>It spans wide at the sides, but in front of you is an insurmountable wall of sand.",
             },
             {
+                name: "shore-stability-found",
+                unlock: { totalResource: { stabilizer: 5 } },
+                message: "The stabilizers work diligently, eager to support a loose-laid world. Perhaps there is hope.",
+            },
+            {
                 name: "shore-discover-driftwood",
                 unlock: { upgrade: ["sunObservation"] },
                 message: "You notice some long, branching brown things bobbing on the surface. Some sharks say it's flaky.",
@@ -556,11 +561,6 @@ SharkGame.HomeMessages = {
                 name: "shore-flaily-flail",
                 unlock: { totalResource: { burrow: 5 } },
                 message: "The mudskippers flail in their newly-dug burrows. They say their dance is traditional, as are their oral tales.",
-            },
-            {
-                name: "shore-stability-found",
-                unlock: { totalResource: { stabilizer: 5 } },
-                message: "The stabilizers work diligently, eager to support a loose-laid world. Perhaps there is hope.",
             },
             {
                 name: "shore-hardbark-coated",
@@ -598,6 +598,11 @@ SharkGame.HomeMessages = {
                 message: "The caracaras are cold and aloof. They act haughty to us, with no emotion in their eyes.",
             },
             {
+		        name: "shore-actually-safe-safehold",
+		        unlock: { upgrade: ["crystalTalons"] },
+		        message: "oooh oooh recylcer and gate woooh",
+	        },
+            {
                 name: "shore-puppets-taught",
                 unlock: { upgrade: ["puppetTeaching"] },
                 message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
@@ -606,6 +611,11 @@ SharkGame.HomeMessages = {
                 name: "shore-exchange-platform",
                 unlock: { totalResource: { exchangeStation: 5 } },
                 message: "bustling hubs etc.",
+            },
+            {
+                name: "shore-barrage-braver",
+                unlock: { totalResource: { barrageBraver: 1 } },
+                message: "oooh oooh the braver is making its way out",
             },
             {
                 name: "shore-gatemaster",
