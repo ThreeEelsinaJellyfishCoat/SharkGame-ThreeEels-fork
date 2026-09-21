@@ -37,7 +37,7 @@ SharkGame.ResourceTable = {
                     return "vents";
                 case "tempestuous":
                     return "the storm";
-                case "shore:
+                case "shore":
                     return "the sandstorm";
                 default:
                     return "the world";
