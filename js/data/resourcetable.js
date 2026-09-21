@@ -556,16 +556,6 @@ SharkGame.ResourceTable = {
         value: 1500,
     },
 
-    // SAVED FOR LATER
-
-    coralglass: {
-        name: "coralglass",
-        singleName: "coralglass",
-        desc: "null",
-        color: "#FDD5B4",
-        value: 70,
-    },
-
     // volcanic
 
     shrimp: {
@@ -862,6 +852,7 @@ SharkGame.ResourceTable = {
             // coral: 0.5,
             seagrass: 0.5,
         },
+		value: 4000,
     },
 
     mudskipper: {
@@ -873,6 +864,7 @@ SharkGame.ResourceTable = {
             driftwood: 0.5,
         },
         jobs: ["burrow", "mentor"],
+		value: 1000,
     },
 
     burrow: {
@@ -883,6 +875,7 @@ SharkGame.ResourceTable = {
         income: {
             mudskipper: 0.05,
         },
+		value: 2000,
     },
 
     driftwood: { // this isn't with the materials above as it's not likely to be used for other oceans --ThreeEels
@@ -890,6 +883,7 @@ SharkGame.ResourceTable = {
         singleName: "driftwood",
         desc: "Buoyant detritus from the beyond.",
         color: "#342D19",
+		value: 15,
     },
 
     hardbark: {
@@ -897,6 +891,7 @@ SharkGame.ResourceTable = {
         singleName: "hardbark",
         desc: "Pistons and mechanisms for the puppets.",
         color: "#1F2F45",
+		value: 25,
     },
 
     intel: {
@@ -904,6 +899,7 @@ SharkGame.ResourceTable = {
         singleName: "intel",
         desc: "What the Braver knows.",
         color: "#FFFFFF",
+		value: 75,
     },
 
     mentor: {
@@ -911,6 +907,7 @@ SharkGame.ResourceTable = {
         singleName: "puppet mentor",
         desc: "Those who make adequates better.",
         color: "#CC6600",
+		value: 3000,
     },
 
     caracara: {
@@ -922,6 +919,7 @@ SharkGame.ResourceTable = {
             crystal: 1,
         },
         jobs: ["retrievalDuo", "connoisseur"],
+		value: 1000,
     },
 
     retrievalDuo: {
@@ -929,6 +927,7 @@ SharkGame.ResourceTable = {
         singleName: "retrieval duo",
         desc: "A use and a boost.",
         color: "#cc9966",
+		value: 4000,
     },
 
     connoisseur: {
@@ -940,6 +939,7 @@ SharkGame.ResourceTable = {
             seagrass: 0.5,
             // coral: 0.5,
         },
+		value: 4000,
     },
 
     seagrassPicker: { // previously coralPicker
@@ -950,6 +950,7 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 3, // used to be coral
         },
+		value: 125000,
     },
 
     driftwoodSnarer: {
@@ -960,6 +961,7 @@ SharkGame.ResourceTable = {
         income: {
             driftwood: 2,
         },
+		value: 18750,
     },
 
     hardbarkSmith: {
@@ -971,6 +973,7 @@ SharkGame.ResourceTable = {
             hardbark: 2,
             crystal: -2,
         },
+		value: 12500,
     },
 
     shoreQueller: {
@@ -984,6 +987,7 @@ SharkGame.ResourceTable = {
             seagrass: 1,
             crystal: 1.5,
         },
+		value: 62500,
     },
 
     /* younglingSlayer: {
@@ -991,6 +995,7 @@ SharkGame.ResourceTable = {
         singleName: "youngling slayer",
         desc: "<strong>We underestimated its power.</strong>",
         color: "#DC143C",
+		value: 62500,
     }, */
 
     safeholdSentinel: {
@@ -1001,6 +1006,7 @@ SharkGame.ResourceTable = {
         income: {
             roughSand: -5.5,
         },
+		value: -1,
     },
 
     barrageBraver: {
@@ -1011,6 +1017,7 @@ SharkGame.ResourceTable = {
         income: {
             intel: 0.001,
         },
+		value: -1,
     },
 
     gatemasterPuppet: {
@@ -1018,6 +1025,7 @@ SharkGame.ResourceTable = {
         singleName: "Gatemaster",
         desc: "It oversees its children and its home.",
         color: "#99FFCC",
+		value: -1,
     },
 
     seagrassFarm: {
@@ -1028,6 +1036,7 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 1.5,
         },
+		value: 755,
     },
 
     exchangeStation: {
@@ -1035,6 +1044,7 @@ SharkGame.ResourceTable = {
         singleName: "exchange station",
         desc: "A bustling hub of beyonderwalkers and seaborn.",
         color: "#4D2600",
+		value: 755,
     },
 
     /* receiverNode: {
@@ -1045,6 +1055,7 @@ SharkGame.ResourceTable = {
         income: {
             intel: 1.5,
         },
+		value: 750,
     }, */
 
     roughSand: {
@@ -1052,7 +1063,8 @@ SharkGame.ResourceTable = {
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
         color: "#CC9900",
-	forceIncome: true,
+		forceIncome: true,
+		value: -100,
     },
 
     // SHROUDED
