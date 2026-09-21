@@ -2676,7 +2676,7 @@ SharkGame.HomeActions = {
                 "The cause of science is advanced!",
                 "This is perhaps maybe insightful!",
                 "Why are we even doing this? Who knows! Science!",
-                "Results still inconclusive! Unsurpsingly...",
+                "Results still inconclusive! Unsurprisngly...",
                 "Quick question. What's a flower?",
                 "At least it's not gross.",
                 "We would learn a lot more from these if they weren't so absolutely tiny.",
@@ -3307,7 +3307,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
-                { resource: "caracara", costFunction: "linear", priceIncrease: 1 },
+                { resource: "caracara", costFunction: "constant", priceIncrease: 1 },
                 { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
             ],
             max: "retrievalDuo",
@@ -3612,7 +3612,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                // { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
                 { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
                 { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
             ],
