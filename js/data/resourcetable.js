@@ -979,12 +979,12 @@ SharkGame.ResourceTable = {
     shoreQueller: {
         name: "shore quellers",
         singleName: "shore queller",
-        desc: "Flowing puppets bringing stability and heat.",
+        desc: "Flowing puppets bringing heat.",
         color: "#CCCC00",
         income: {
-	    sand: -12.5,
-	    roughSand: -0.0002,
-            seagrass: 1,
+	    	sand: -12.5,
+	    	roughSand: -0.0002,
+        	// seagrass: 1,
             crystal: 1.5,
         },
 		value: 62500,
