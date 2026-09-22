@@ -2017,6 +2017,7 @@ SharkGame.InternalCategories = {
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
         resources: ["hardbark", "seagrassPicker", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", /* "younglingSlayer", */ "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
+	},
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],
     },
