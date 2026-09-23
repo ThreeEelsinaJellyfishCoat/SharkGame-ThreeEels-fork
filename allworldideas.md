@@ -8,7 +8,7 @@ blah blah blah body text here
 Spencers145 was a big fan of the original Shark Game in his childhood - he grew up to code the New Frontiers mod that these ideas are being compiled for.
 
 <ins>**The Stone Ocean:**</ins>  a world with no natural sand nor undersea currents - just hard, solid slate and stone as far as the eye can see. And your aim is to break it all down to sand.<br>
-<ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.<br>
+<ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed. (Note by Three Eels: has the potential to be merged with Umbra Animo's Lifeless and Machine.)<br>
 <ins>**The Ethereal Ocean (scrapped):**</ins> an ocean of surrealness in that thought escapes into reality. I haven't gathered much about it, but it seems to be slightly similar to Brian's Forgotten Ocean.<br>
 <ins>**The Arcane Ocean:**</ins> a scienceless world of arcana. You take rituals in place of experimentation.
 
@@ -56,8 +56,8 @@ Directly quoted from Three Eels, hence the quotation marks.
 Umbra Animo is a fan on the Discord server whose username is @umbraanimo. These ideas are quoted directly.
 
 <ins>**The Gas World:**</ins> *"a twist of the perspective of what is a "sea" this sea is a gas giant with the fish being adapted to flying through the thick gas like swimming in water."* <br>
-<ins>**The Lifeless Ocean:**</ins> *"a  world where nearly all organic life is gone. getting fish and buying frenzy members is much harder so breeders and needed but non organic materials and unique finds are everywhere."* <br>
-<ins>**The Machine Ocean:**</ins> *"a world where the shark machines have progressed to far. styled similar to the terminator series, you have to carefully develop your frenzy because to much activity will attract the Deadly ai's attention needing to counter by developing fighters and taking down the machine infostructure. could add some very advanced tech as you go."* <br>
+<ins>**The Lifeless Ocean:**</ins> *"a  world where nearly all organic life is gone. getting fish and buying frenzy members is much harder so breeders and needed but non organic materials and unique finds are everywhere."* (Note by Three Eels: has the potential to be merged with Spencers' Scrapyard and the ocean below.)<br>
+<ins>**The Machine Ocean:**</ins> *"a world where the shark machines have progressed to far. styled similar to the terminator series, you have to carefully develop your frenzy because to much activity will attract the Deadly ai's attention needing to counter by developing fighters and taking down the machine infostructure. could add some very advanced tech as you go."* (Note by Three Eels: has the potential to be merged with Spencers' Scrapyard and the ocean above.)<br>
 <ins>**The Disconnected Ocean:**</ins> *"the gravity of this world is strange, instead of one solid ocean multiple ocean spheres float around the core, all in different sizes. the challenge here is the player has only so much space and has to bridge the gaps between ocean spheres to gain more space."* <br>
 <ins>**The Haunted Ocean:**</ins> *"styled similar to the lifeless Ocean but with a heavier leaning to Ghosts and supernatural. can't recruit living frenzy members or at least much harder to do so but can construct undead versions of them so less fish catching more bone collecting."* (Note from Three Eels - has the potential to be merged with my Lifeless.)
 
