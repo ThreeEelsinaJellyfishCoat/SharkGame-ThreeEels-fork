@@ -365,14 +365,14 @@ SharkGame.WorldTypes = {
         absentResources: ["knowledge", "tar", "ice", "heater", "chimaera"], // replace with resources that are essentially incapable of existing in the ocean
         modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 1.5 }], // for any world-applied multipliers/generation
         // gateType: "slots",
-	    // the above field doesn't seem to do anything, nor is it present in the other worldtypes, so I removed it
+        // the above field doesn't seem to do anything, nor is it present in the other worldtypes, so I removed it
         gateRequirements: { // can also be an upgrade or the presence of a resource, e.g. the whale chorus
             slots: {
-		        fish: 1,
+                fish: 1,
                 sand: 1,
                 crystal: 1,
                 kelp: 1,
-		        seaApple: 1,
+                seaApple: 1,
                 sharkonium: 1,
             },
         },
@@ -420,7 +420,7 @@ SharkGame.WorldTypes = {
         modifiers: [
             // { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 },
             { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 },
-			{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "crystal", amount: 2 },
+            { type: "multiplier", modifier: "planetaryResourceBoost", resource: "crystal", amount: 2 },
             { type: "multiplier", modifier: "planetaryIncome", resource: "roughSand", amount: 2 },
         ],
         // gateType: "slots",

@@ -4536,7 +4536,7 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
-	    events: [],
+            events: [],
         }, */
         /// ///// BASICS /////////////////////////////
         flee: {
@@ -4547,7 +4547,7 @@ SharkGame.Upgrades = {
             cost: {
                 fish: 250,
             },
-	    // effect: { resourceBoost: { roughSand: -0.0000000005 } },
+            // effect: { resourceBoost: { roughSand: -0.0000000005 } },
             events: ["shoreGiveSeagrass", "shoreNarrowSpace"],
         },
         crystalBite: {
@@ -4872,7 +4872,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["automation"],
-                seen: ["fishMachine", "crystalMiner"/* , "sandDigger"*/],
+                seen: ["fishMachine", "crystalMiner"/* , "sandDigger" */],
             },
             effect: {
                 incomeMultiplier: {
@@ -5154,7 +5154,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["exploration"],
-		seen: ["safeholdSentinel"],
+                seen: ["safeholdSentinel"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5250,7 +5250,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrade: ["crystalTalons"],
-		seen: ["caracara"],
+                seen: ["caracara"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5300,7 +5300,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["beyondwalkerPairing"],
-		seen: ["retrievalDuo"],
+                seen: ["retrievalDuo"],
             },
             // effect: {},
         },
@@ -5328,7 +5328,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
-		seen: ["barrageBraver"],
+                seen: ["barrageBraver"],
             },
             effect: {
                 addIntelIncome: {
@@ -5357,7 +5357,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
-		seen: ["barrageBraver"],
+                seen: ["barrageBraver"],
             },
             // effect: {},
             // events: [],

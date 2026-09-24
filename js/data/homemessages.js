@@ -602,16 +602,16 @@ SharkGame.HomeMessages = {
                 unlock: { upgrade: ["puppetTeaching"] },
                 message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
             },
-	    	{
-				name: "shore-actually-safe-safehold",
-				unlock: { upgrade: ["crystalTalons"] },
-				message: "oooh oooh recylcer and gate woooh",
-	    	},
-	    	{
-				name: "shore-connoisseurs",
-				unlock: { totalResource: { connoisseur: 5 } },
-				message: "oooh connoisseurs oooooh",
-	    	},
+            {
+                name: "shore-actually-safe-safehold",
+                unlock: { upgrade: ["crystalTalons"] },
+                message: "oooh oooh recylcer and gate woooh",
+            },
+            {
+                name: "shore-connoisseurs",
+                unlock: { totalResource: { connoisseur: 5 } },
+                message: "oooh connoisseurs oooooh",
+            },
             {
                 name: "shore-exchange-platform",
                 unlock: { totalResource: { exchangeStation: 5 } },
@@ -622,26 +622,26 @@ SharkGame.HomeMessages = {
                 unlock: { totalResource: { barrageBraver: 1 } },
                 message: "oooh oooh the braver is making its way out",
             },
-			{
-				name: "shore-first-log",
-				unlock: { upgrade: ["firstLog"] },
-				message: "ooooh oooooh first log",
-	    	},
-	    	{
-				name: "shore-second-log",
-				unlock: { upgrade: ["secondLog"] },
-				message: "ooooh oooooh second log",
-	    	},
+            {
+                name: "shore-first-log",
+                unlock: { upgrade: ["firstLog"] },
+                message: "ooooh oooooh first log",
+            },
+            {
+                name: "shore-second-log",
+                unlock: { upgrade: ["secondLog"] },
+                message: "ooooh oooooh second log",
+            },
             {
                 name: "shore-gatemaster",
                 unlock: { totalResource: { gatemasterPuppet: 1 } },
                 message: "The faceless, silent Gatemaster pulses and throbs with energy. Raw, ethereal energy.<br>Is it looking at you?",
             },
-	        {
-				name: "shore-third-log",
-				unlock: { upgrade: ["thirdLog"] },
-				message: "ooooh oooooh third log",
-	    	},
+            {
+                name: "shore-third-log",
+                unlock: { upgrade: ["thirdLog"] },
+                message: "ooooh oooooh third log",
+            },
         ],
         /* stone: [
            {
