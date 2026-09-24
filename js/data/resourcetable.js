@@ -1599,7 +1599,7 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             shark: 0.01,
             ray: 0.01,
             crab: 0.01,
-            retrievalDuo: 0.02,
+            // retrievalDuo: 0.02,
         },
     },
     coral: {
