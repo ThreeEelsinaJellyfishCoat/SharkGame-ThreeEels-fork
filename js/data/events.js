@@ -158,6 +158,24 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
+    shoreNarrowSpace: {
+        handlingTime: "beforeTick",
+        priority: 3,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            if (SharkGame.Upgrades.purchased.indexOf("flee") > -1) {
+                return "trigger";
+            }
+            return "pass";
+        },
+        trigger() {
+            res.applyModifier("planetaryIncome", "roughSand", -0.5);
+            res.clearNetworks();
+            res.buildIncomeNetwork();
+        },
+    },
     /* shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,
