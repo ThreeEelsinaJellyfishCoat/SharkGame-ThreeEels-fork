@@ -2962,6 +2962,7 @@ SharkGame.HomeActions = {
                     crystal: 20,
                     shark: 1,
                 },
+                upgrade: ["flee"],
             },
             outcomes: [
                 "Doctor Shark, coming right up!",
@@ -3016,7 +3017,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Remove a shark from fish duty and set them to shark making duty.",
         }, // end of breeder code
-        getLaser: {
+        /* getLaser: {
             name: "Equip laser ray",
             effect: {
                 resource: {
@@ -3049,7 +3050,7 @@ SharkGame.HomeActions = {
                 "Welcome to the future! The future is lasers!",
             ],
             helpText: "Remove a ray from sand detail and let them fuse sand into raw crystal.",
-        }, // end of job code
+        }, */ // end of job code
         getMaker: {
             name: "Instruct a ray maker",
             effect: {
@@ -3273,7 +3274,7 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
                 { resource: "science", costFunction: "linear", priceIncrease: 15 },
-                { resource: "hardbark", costFunction: "constant", priceIncrease: 4 },
+                // { resource: "hardbark", costFunction: "constant", priceIncrease: 4 },
             ],
             max: "mentor",
             prereq: {
@@ -3405,7 +3406,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Construct a machine to automatically harvest crystals efficiently.",
         }, // end of machine code
-        getSandDigger: {
+        /* getSandDigger: {
             name: "Build sand digger",
             effect: {
                 resource: {
@@ -3445,7 +3446,7 @@ SharkGame.HomeActions = {
                 "Giant machines blot out our sun.",
             ],
             helpText: "Construct a machine to automatically dig up sand efficiently.",
-        }, // end of machine code
+        }, */ // end of machine code
         getFishMachine: {
             name: "Build fish machine",
             effect: {
