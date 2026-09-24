@@ -535,7 +535,7 @@ SharkGame.HomeMessages = {
             {
                 name: "shore-sandstorm-escape-attempt",
                 unlock: { upgrade: ["flee"] }, // previously "justPushFurtherLol"
-                message: "You and the ragged frenzy clear the gap. Your welcoming sight is a clear space of water.<br>It spans wide at the sides, but in front of you is an insurmountable wall of sand.",
+                message: "You and the ragged frenzy clear the gap. Your prize is a clear space of water.<br>It spans wide at the sides, but in front of you is an insurmountable wall of sand.",
             },
             {
                 name: "shore-stability-found",
@@ -570,7 +570,7 @@ SharkGame.HomeMessages = {
             {
                 name: "shore-puppets-piloted",
                 unlock: { upgrade: ["puppetAssembly"] },
-                message: "The frenzy move the puppets from within. It is nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
+                message: "The frenzy move the puppets from within. They are nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
             },
             {
                 name: "shore-tunnel",
@@ -598,15 +598,20 @@ SharkGame.HomeMessages = {
                 message: "The caracaras are cold and aloof. They act haughty to us, with no emotion in their eyes.",
             },
             {
-		        name: "shore-actually-safe-safehold",
-		        unlock: { upgrade: ["crystalTalons"] },
-		        message: "oooh oooh recylcer and gate woooh",
-	        },
-            {
                 name: "shore-puppets-taught",
                 unlock: { upgrade: ["puppetTeaching"] },
                 message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
             },
+	    	{
+				name: "shore-actually-safe-safehold",
+				unlock: { upgrade: ["crystalTalons"] },
+				message: "oooh oooh recylcer and gate woooh",
+	    	},
+	    	{
+				name: "shore-connoisseurs",
+				unlock: { totalResource: { connoisseur: 5 } },
+				message: "oooh connoisseurs oooooh",
+	    	},
             {
                 name: "shore-exchange-platform",
                 unlock: { totalResource: { exchangeStation: 5 } },
@@ -617,11 +622,26 @@ SharkGame.HomeMessages = {
                 unlock: { totalResource: { barrageBraver: 1 } },
                 message: "oooh oooh the braver is making its way out",
             },
+			{
+				name: "shore-first-log",
+				unlock: { upgrade: ["firstLog"] },
+				message: "ooooh oooooh first log",
+	    	},
+	    	{
+				name: "shore-second-log",
+				unlock: { upgrade: ["secondLog"] },
+				message: "ooooh oooooh second log",
+	    	},
             {
                 name: "shore-gatemaster",
                 unlock: { totalResource: { gatemasterPuppet: 1 } },
                 message: "The faceless, silent Gatemaster pulses and throbs with energy. Raw, ethereal energy.<br>Is it looking at you?",
             },
+	        {
+				name: "shore-third-log",
+				unlock: { upgrade: ["thirdLog"] },
+				message: "ooooh oooooh third log",
+	    	},
         ],
         /* stone: [
            {
