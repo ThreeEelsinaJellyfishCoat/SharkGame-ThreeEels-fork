@@ -176,6 +176,19 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
+    shoreWipeSandstormSand: { // once you get to the narrow place
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.ridSand) {
+                SharkGame.flags.ridSand = true;
+                res.changeResource("roughSand", -1000);
+            }
+        },
+    },
     /* shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,
