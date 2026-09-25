@@ -4541,14 +4541,14 @@ SharkGame.Upgrades = {
         /// ///// BASICS /////////////////////////////
         flee: {
             name: "Flee",
-            desc: "I see a gap! A clear space!",
+            desc: "There's a gap! A clear space!",
             researchedMessage: "We managed to make it out of the eye of the barrage, and into a less violent clearing. Although, it's a bit... long.",
             effectDesc: "We found a (very long) place to take a rest. We're not bombarded with rough sand as strongly as before, but still slowly peppered.",
             cost: {
                 fish: 250,
             },
             // effect: { resourceBoost: { roughSand: -0.0000000005 } },
-            events: ["shoreGiveSeagrass", "shoreNarrowSpace"],
+            events: ["shoreGiveSeagrass", "shoreNarrowSpace", "shoreWipeSandstormSand"],
         },
         crystalBite: {
             name: "Crystal Bite-Gear",
