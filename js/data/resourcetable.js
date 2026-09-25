@@ -1604,12 +1604,12 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
     },
     coral: {
         multiply: {
-            roughSand: -0.0000005,
+            roughSand: -0.00005,
         },
     },
     seagrass: {
         multiply: {
-            roughSand: -0.0000005,
+            roughSand: -0.00005,
         },
     },
     /* younglingSlayer: {
