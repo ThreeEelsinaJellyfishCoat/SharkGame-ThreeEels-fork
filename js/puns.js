@@ -69,7 +69,7 @@ SharkGame.Puns = {
     worldBased: {
         frigid: {
             messages: ["Did you hear about the urchin's pride on its cold resilience? It felt n-ice!"],
-        },
+        },/*
         volcanic: {
             messages: [
                 "Placeholder :D",
@@ -94,7 +94,7 @@ SharkGame.Puns = {
         },
         shore: {
             messages: ["Placeholder :D"],
-        },
+        }, */
     },
 
     resourceBased: {
@@ -102,12 +102,12 @@ SharkGame.Puns = {
             "A shark detective was inspecting the crime scene. He felt sus-fish-ous.",
             "Clownfish aren't popular. They taste funny.",
         ],
-        crystal: [
-            "Placeholder :D",
-        ],
+        // crystal: [
+            // "Placeholder :D",
+        // ],
         sand: [
             "No matter who's dead, the seafloor always sands its regards.",
-        ],
+        ],/*
         kelp: [
             "Placeholder :D",
         ],
@@ -131,13 +131,13 @@ SharkGame.Puns = {
         ],
         roughSand: [
             "Placeholder :D",
-        ],
+        ], */
         shark: [
             "A shark detective was inspecting the crime scene. He felt sus-fish-ous.",
         ],
         ray: [
             "To a ray, stinging is pretty mantastic.",
-        ],
+        ],/*
         crab: [
             "Placeholder :D",
         ],
@@ -146,10 +146,10 @@ SharkGame.Puns = {
         ],
         dolphin: [
             "Placeholder :D",
-        ],
+        ], */
         whale: [
             "Being large means you can catch a lot of fish, which is whaley good.",
-        ],
+        ],/*
         urchin: [
             "Placeholder :D",
         ],
@@ -158,29 +158,30 @@ SharkGame.Puns = {
         ],
         lobster: [
             "Placeholder :D",
-        ],
+        ], */
         shrimp: [
             "The shrimp traitor was surrounded. He couldn’t scampi away this time.",
         ],
         eel: [
-            "Placeholder :D",
+            "Attempting to breathe underwater is eel-advised.",
         ],
-        chimaera: [
-            "Placeholder :D",
-        ],
+        // chimaera: [
+            // "Placeholder :D",
+        // ],
         billfish: [
             "To a shark, a nose-spear would be quite unwieldy. The billfish say it's great. They have a point.",
         ],
-        mudskipper: [
-            "Placeholder :D",
-        ],
+        // mudskipper: [
+            // "Placeholder :D",
+        // ],
         caracara: [
-            "Placeholder :D",
+            "A caracara got scammed of all her fish. She never knew she could be so gull-ible.", // this actually doesn't work as caracaras are falcons, not gulls -- Three Eels
         ],
 
     },
 
     default: [
         "This puns system was based off of the facts system.<br>That's it. There's no punchline to this.",
+	    "A lot of these puns are community-contributed from the Discord server. Pretty much anyone can submit a pun if they're there!",
     ],
 };
