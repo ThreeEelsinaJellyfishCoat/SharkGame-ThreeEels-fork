@@ -218,8 +218,8 @@ SharkGame.HomeActions = {
             },
             cost: {},
             prereq: {
-		upgrade: ["seabedGeology"],
-	    },
+                upgrade: ["seabedGeology"],
+            },
             outcomes: [
                 "Caught seagrass!",
             ],
@@ -2647,8 +2647,8 @@ SharkGame.HomeActions = {
             },
             cost: {},
             prereq: {
-		upgrade: ["driftwoodAnalysis"],
-	    },
+                upgrade: ["driftwoodAnalysis"],
+            },
             outcomes: [
                 "Caught driftwood!",
             ],
@@ -2977,10 +2977,10 @@ SharkGame.HomeActions = {
                 "A common mudskipper joins you.",
                 "A Pearse’s mudskipper joins you.",
                 "A great blue spotted mudskipper joins you.",
-		"Wait, that's not a mudskipper, that's just a fish.",
-		"A mere PEASANT joins you.",
-		"A mere SERF joins you.",
-		"A mere SERVANT joins you.",
+                "Wait, that's not a mudskipper, that's just a fish.",
+                "A mere PEASANT joins you.",
+                "A mere SERF joins you.",
+                "A mere SERVANT joins you.",
             ],
             multiOutcomes: [
                 "WOOD! MORE WOOD! BRING US WOOD!",
@@ -2989,12 +2989,12 @@ SharkGame.HomeActions = {
                 "At all times, you must remember that you are repurposed food.",
                 "You are fortunate to serve us! To be spared!",
                 "We won't eat you - so long as you do your job...",
-		"Nervous little things skittering around.",
-		"Your tiny, toothless little mouths are the perfect tool to bring us wood.",
-		"A school of mudskippers!",
-		"A shoal of mudskippers!",
-		"A swamp of mudskippers! No, that's made up.",
-		"A marsh of mudskippers! That one's made-up too.",
+                "Nervous little things skittering around.",
+                "Your tiny, toothless little mouths are the perfect tool to bring us wood.",
+                "A school of mudskippers!",
+                "A shoal of mudskippers!",
+                "A swamp of mudskippers! No, that's made up.",
+                "A marsh of mudskippers! That one's made-up too.",
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
         }, // end of creature code
@@ -3022,8 +3022,8 @@ SharkGame.HomeActions = {
             ],
             multiOutcomes: [
                 "They await you in flocks.",
-		"They await you in packs.",
-		"They await you in phalanxes.",
+                "They await you in packs.",
+                "They await you in phalanxes.",
                 "They blot out the sun.",
                 "They cast a shadow upon all as they fly.",
                 "Their presence commands respect from all but us.",
@@ -3049,7 +3049,7 @@ SharkGame.HomeActions = {
                     crystal: 20,
                     shark: 1,
                 },
-		upgrade: ["flee"],
+                upgrade: ["flee"],
             },
             outcomes: [
                 "Doctor Shark, coming right up!",
@@ -3199,13 +3199,13 @@ SharkGame.HomeActions = {
                 "Stabilizer provided!",
                 "Provided stabilizer!",
                 "A stabilizer at work, saving the seabed!",
-		"Steadying the world one crab at a time!",
+                "Steadying the world one crab at a time!",
             ],
             multiOutcomes: [
                 "Consider your seabeds stabilized!",
                 "No more rough sand with these guys around!",
                 "Area One's status: on the job!",
-		"Be brave, crabs, and be proud!",
+                "Be brave, crabs, and be proud!",
             ],
             helpText: "Provide a crab with seagrass to plant.",
         },
@@ -3247,7 +3247,7 @@ SharkGame.HomeActions = {
         }, // end of breeder code
 
         // MUDSKIPPER JOBS ///////////////////////////
-	getMentor: {
+        getMentor: {
             name: "Train mudskipper mentor",
             effect: {
                 resource: {
@@ -3269,14 +3269,14 @@ SharkGame.HomeActions = {
             outcomes: [
                 "The claw stick's connected to the - pincer stick!",
                 "And that is how you perform a full 360 in a Shore Queller.",
-		"Today you'll be learning how to fence in a Seagrass Picker.",
-		"Our lesson today will be how to dance in a Driftwood Snarer.",
-		"Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
+                "Today you'll be learning how to fence in a Seagrass Picker.",
+                "Our lesson today will be how to dance in a Driftwood Snarer.",
+                "Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
             ],
             multiOutcomes: [
                 "Brandon! Do NOT amputate your fellow shark- PATRICIA!!! DO NOT LASER THE CRABS-",
                 "Pop quiz! Name the four puppet models and their respective fields.",
-		"I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
+                "I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
             ],
             helpText: "Teach a mudskipper techniques on puppetwork, so that it may pass on its knowledge.",
         }, // end of job code
@@ -3664,7 +3664,7 @@ SharkGame.HomeActions = {
                 { resource: "hardbark", costFunction: "unique", priceIncrease: 25000000 },
                 { resource: "seagrass", costFunction: "unique", priceIncrease: 1500000 },
                 { resource: "crystal", costFunction: "unique", priceIncrease: 500000 },
-			],
+            ],
             max: "safeholdSentinel",
             prereq: {
                 resource: {
@@ -3676,8 +3676,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The Safehold Sentinel moves every tendril, as if it's shaking off numbness.",
-				"The Sentinel's tendrils slowly ripple from the tips to the great crystal crown on its head.",
-				"The Sentinel of the Safehold's tendrils snap taut, and dart around in the tunnel.",
+                "The Sentinel's tendrils slowly ripple from the tips to the great crystal crown on its head.",
+                "The Sentinel of the Safehold's tendrils snap taut, and dart around in the tunnel.",
             ],
             helpText: "Repair the many-tendriled thing looming above the big latch.",
         }, // end of unique code
@@ -3704,8 +3704,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The Barrage Braver is still, before slowly rising to its legs.",
-				"The frenzy holds its breath, then releases it as the Braver starts moving.",
-				"The Braver of the Barrage stands on its six legs, and stares at the safehold's entrance.",
+                "The frenzy holds its breath, then releases it as the Braver starts moving.",
+                "The Braver of the Barrage stands on its six legs, and stares at the safehold's entrance.",
             ],
             helpText: "Reconstruct the Barrage Braver of mudskipper tales.",
         }, // end of unique code
@@ -3732,8 +3732,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The world seems to strum as the Gatemaster awakens. In the blink of an eye, it looms behind the strange gate and prises it open.",
-				"The ocean feels like it's thrumming as the Gatemaster awakens. Bright light envelops your sight, and the strange gate is open.",
-				"A deep humming resonates across the safehold as the Gatemaster awakens. Wispy, ethereal energy branches off from it, and flows into the gate.",
+                "The ocean feels like it's thrumming as the Gatemaster awakens. Bright light envelops your sight, and the strange gate is open.",
+                "A deep humming resonates across the safehold as the Gatemaster awakens. Wispy, ethereal energy branches off from it, and flows into the gate.",
             ],
             helpText: "Collect the scattered pieces of... whatever this is...",
         }, // end of unique code
@@ -6009,13 +6009,13 @@ SharkGame.HomeActionCategories = {
     places: {
         name: "Places",
         actions: [
-	    "getSpongeFarm",
-	    "getCoralFarm",
-	    // "getShoreCoralFarm",
-	    "getSeagrassFarm",
-	    "getExchangeStation",
-	    // "getReceiverNode",
-	],
+            "getSpongeFarm",
+            "getCoralFarm",
+            // "getShoreCoralFarm",
+            "getSeagrassFarm",
+            "getExchangeStation",
+            // "getReceiverNode",
+        ],
     },
 
     unique: {
