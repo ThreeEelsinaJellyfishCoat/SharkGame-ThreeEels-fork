@@ -96,8 +96,12 @@ SharkGame.FunFacts = {
         shore: {
             messages: [
                 "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, #ffbf00, cc9900, and 997300.",
-                "This world was one of the first completely new worlds to be finished for New Frontiers.",
+		        "This world was one of the first completely new worlds to be released for New Frontiers.",
+		        "During early-to-middle-stage development, the Shore ocean was supposed to have coral alongside seagrass,<br>but it was cut to make things less complex.",
             ],
+            areRequirementsMet() {
+                return SharkGame.Upgrades.purchased.includes("agriculture");
+	        },
         },
     },
 
@@ -130,7 +134,7 @@ SharkGame.FunFacts = {
         ],
         octopus: [
             "It's octopuses, not octopi.",
-            "Octopuses are capable of extremely advanced camoflague. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
+            "Octopuses are capable of extremely advanced camoflauge. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
             "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
             "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
             "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",
@@ -253,6 +257,7 @@ SharkGame.FunFacts = {
             // "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
             "The crafting process of hardbark is relatively simple, reflecting the simple lives of its crafters.",
             "Hardbark puppets can sometimes act out of their own accord. It might be because of the crystals' magic powers.",
+	        "Hardbark puppets are held together with seagrass tied in tight knots.",
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
@@ -316,19 +321,23 @@ SharkGame.FunFacts = {
             "Don't touch the sponge on their backs. They're very protective about it.",
         ],
         delphinium: [
-            "To a person, delphinium is glitter on blue gold. To a shark, it's headache-inducing.",
+            "To a person, delphinium is glitter on turquoise gold. To a shark, it's headache-inducing.",
             "The dolphin recipe for delphinium is ancient. It took them many generations to perfect the process, or so they say.",
             "The dolphins are rather fond of delphinium. They appreciate the practicality of sharkonium, however.",
             "Delphinium is rather heavy, and doesn't do well under stress - but soft enough to be crafted into complex shapes.",
         ],
         ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
         tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
+        roughSand: ["During early development, rough sand slowed production rate rather than slowly consuming your resources."],
         calciniumConverter: [
             "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
             "While the first machine-brain interface was created by the science shark team, in the real world, it was developed by brazilian scientist 'Miguel Niconelis'.",
             "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
         ],
-
+        hardbarkSmith: ["How does the molten crystal stay in the tray? We don't know."],
+	    mentor: ["The puppet mentors' glasses are smaller versions of the scientists' ones."],
+	    connoisseur: ["Real-life caracaras do not collect seagrass. Maybe."],
+	    exchangeStation: ["Some frenzy members set up trading stalls in the stations and present their wares."],
     },
 
     default: [
