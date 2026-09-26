@@ -335,9 +335,14 @@ SharkGame.FunFacts = {
             "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
         ],
         hardbarkSmith: ["How does the molten crystal stay in the tray? We don't know."],
-	    mentor: ["The puppet mentors' glasses are smaller versions of the scientists' ones."],
+	    mentor: [
+			"The puppet mentors' glasses are smaller versions of the scientists' ones.",
+			"During extremely early development, there were these puppet training centres<br>that would've accompanied the puppet mentors. Since they're not here, they probably didn't catch on.",
+			"Real-life mudskippers absolutely do not know how to teach tricks to puppets.",
+		],
 	    connoisseur: ["Real-life caracaras do not collect seagrass. Maybe."],
 	    exchangeStation: ["Some frenzy members set up trading stalls in the stations and present their wares."],
+		intel: ["During early development, there were these place resources called 'intel nodes', 'spires to catch the intel'.<br>They were eventually cut to declutter things."],
     },
 
     default: [
