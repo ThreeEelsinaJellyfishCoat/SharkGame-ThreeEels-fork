@@ -215,6 +215,19 @@ SharkGame.Events = {
             }
         },
     },
+    shoreGiveDriftwood: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveDriftwood) {
+                SharkGame.flags.gaveDriftwood = true;
+                res.changeResource("driftwood", 10);
+            }
+        },
+    },
     volcanicEnsureSponge: {
         handlingTime: "afterTick",
         priority: 0,
