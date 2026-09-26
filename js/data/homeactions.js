@@ -3664,7 +3664,7 @@ SharkGame.HomeActions = {
                 { resource: "hardbark", costFunction: "unique", priceIncrease: 25000000 },
                 { resource: "seagrass", costFunction: "unique", priceIncrease: 1500000 },
                 { resource: "crystal", costFunction: "unique", priceIncrease: 500000 },
-            ],
+			],
             max: "safeholdSentinel",
             prereq: {
                 resource: {
@@ -3675,10 +3675,9 @@ SharkGame.HomeActions = {
                 upgrade: ["exploration"],
             },
             outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
+                "The Safehold Sentinel moves every tendril, as if it's shaking off numbness.",
+				"The Sentinel's tendrils slowly ripple from the tips to the great crystal crown on its head.",
+				"The Sentinel of the Safehold's tendrils snap taut, and dart around in the tunnel.",
             ],
             helpText: "Repair the many-tendriled thing looming above the big latch.",
         }, // end of unique code
@@ -3690,9 +3689,9 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 125 },
-                { resource: "sharkonium", costFunction: "unique", priceIncrease: 125 },
-                { resource: "crystal", costFunction: "unique", priceIncrease: 15 },
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 1250000 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 125000 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 150000 },
             ],
             max: "barrageBraver",
             prereq: {
@@ -3704,10 +3703,9 @@ SharkGame.HomeActions = {
                 upgrade: ["taleHeeding"],
             },
             outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
+                "The Barrage Braver is still, before slowly rising to its legs.",
+				"The frenzy holds its breath, then releases it as the Braver starts moving.",
+				"The Braver of the Barrage stands on its six legs, and stares at the safehold's entrance.",
             ],
             helpText: "Reconstruct the Barrage Braver of mudskipper tales.",
         }, // end of unique code
@@ -3719,9 +3717,9 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
-                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
-                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250000000 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 250000000 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 500000 },
             ],
             max: "gatemasterPuppet",
             prereq: {
@@ -3733,10 +3731,9 @@ SharkGame.HomeActions = {
                 upgrade: ["fullGatemaster"],
             },
             outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
+                "The world seems to strum as the Gatemaster awakens. In the blink of an eye, it looms behind the strange gate and prises it open.",
+				"The ocean feels like it's thrumming as the Gatemaster awakens. Bright light envelops your sight, and the strange gate is open.",
+				"A deep humming resonates across the safehold as the Gatemaster awakens. Wispy, ethereal energy branches off from it, and flows into the gate.",
             ],
             helpText: "Collect the scattered pieces of... whatever this is...",
         }, // end of unique code
