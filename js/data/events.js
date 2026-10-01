@@ -189,7 +189,7 @@ SharkGame.Events = {
             }
         },
     },
-    shoreRefreshRoughSand: { // try to make sure rough sand income doesn't go into the positives
+    /* shoreRefreshRoughSand: { // try to make sure rough sand income doesn't go into the positives
         handlingTime: "afterTick",
         priority: 0,
         getAction() {
@@ -205,7 +205,7 @@ SharkGame.Events = {
             res.changeResource("roughSand", 15);
             return true;
         },
-    },
+    }, */
     /* shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,
