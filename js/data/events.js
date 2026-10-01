@@ -139,7 +139,7 @@ SharkGame.Events = {
             });
             return true;
         },
-    }, */
+    },
     shoreWhipUpTheSand: {
         handlingTime: "beforeTick",
         priority: 2,
@@ -157,7 +157,7 @@ SharkGame.Events = {
             res.clearNetworks();
             res.buildIncomeNetwork();
         },
-    },
+    }, */
     shoreNarrowSpace: {
         handlingTime: "beforeTick",
         priority: 3,
@@ -205,8 +205,8 @@ SharkGame.Events = {
             res.changeResource("roughSand", 15);
             return true;
         },
-    }, */
-    /* shoreGiveCoral: {
+    },
+    shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,
         getAction() {
