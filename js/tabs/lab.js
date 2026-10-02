@@ -38,8 +38,8 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "tempestuous":
                 return { resource: { crab: 5 } };
-            case "shore":
-                return { resource: { crab: 5 } };
+	    case "shore":
+		return { resource: { crab: 5 } };
             default:
                 return { resource: { science: 10 } };
         }
@@ -54,7 +54,7 @@ SharkGame.Lab = {
                     return "Sort of just off to the side, there's a cave.";
                 }
                 return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
-            case "shore":
+	    case "shore":
                 if (res.getTotalResource("scientist") < 1) {
                     return "Sort of just off to the side, there's a clearing of sand and grass.";
                 }

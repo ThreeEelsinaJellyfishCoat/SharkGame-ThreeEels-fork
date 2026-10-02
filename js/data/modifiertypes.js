@@ -412,7 +412,7 @@ SharkGame.ModifierTypes = {
                     return input;
                 },
             }, */
-            addIntelIncome: {
+	    addIntelIncome: {
                 defaultValue: 0,
                 apply(current, degree, resource) {
                     if (!SharkGame.ResourceMap.get(resource).baseIncome) {
@@ -645,6 +645,71 @@ SharkGame.ModifierTypes = {
                     return input * (input > 0 && out !== "tar" ? genDegree : 1);
                 },
             },
+            pathOfLoyalty: { // attempts to multiply resource production
+                defaultValue: 1,
+                apply(current, degree, boostedResource) {
+                    SharkGame.ResourceMap.forEach((generatingResource) => {
+                        $.each(generatingResource.income, (generatedResource, amount) => {
+                            if (generatedResource === boostedResource && amount > 0) {
+                                generatingResource.income[generatedResource] = amount * degree;
+                            }
+                        });
+                    });
+                    return current * degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return "All " + sharktext.getResourceName(resource, undefined, undefined, background) + " production × " + degree;
+                },
+                getEffect(_genDegree, outDegree, gen, out) {
+                    return SharkGame.ResourceMap.get(gen).income[out] > 0 && out !== "tar" ? outDegree : 1;
+                },
+                applyToInput(input, _genDegree, outDegree, _gen, _out) {
+                    return input > 0 ? input * outDegree : input;
+                },
+            },
+            dancingLeaves: { // attempts to multiply resource production
+                defaultValue: 1,
+                apply(current, degree, boostedResource) {
+                    SharkGame.ResourceMap.forEach((generatingResource) => {
+                        $.each(generatingResource.income, (generatedResource, amount) => {
+                            if (generatedResource === boostedResource && amount > 0) {
+                                generatingResource.income[generatedResource] = amount * degree;
+                            }
+                        });
+                    });
+                    return current * degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return "All " + sharktext.getResourceName(resource, undefined, undefined, background) + " production × " + degree;
+                },
+                getEffect(_genDegree, outDegree, gen, out) {
+                    return SharkGame.ResourceMap.get(gen).income[out] > 0 && out !== "tar" ? outDegree : 1;
+                },
+                applyToInput(input, _genDegree, outDegree, _gen, _out) {
+                    return input > 0 ? input * outDegree : input;
+                },
+            },
+            /* dancingLeaves: {
+                defaultValue: 1,
+                apply(current, degree, resource) {
+                    const incomes = SharkGame.ResourceMap.get(resource).income;
+                    $.each(incomes, (resouceId, income) => {
+                        if (income > 0 && resouceId !== "tar") {
+                            incomes[resouceId] = income * degree;
+                        }
+                    });
+                    return current * degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return sharktext.getResourceName(resource, undefined, undefined, background) + " efficiency × " + degree;
+                },
+                getEffect(genDegree, _outDegree, gen, out) {
+                    return SharkGame.ResourceMap.get(gen).income[out] > 0 && out !== "tar" ? genDegree : 1;
+                },
+                applyToInput(input, genDegree, _outDegree, _gen, out) {
+                    return input * (input > 0 && out !== "tar" ? genDegree : 1);
+                },
+            }, */
             constructedConception: {
                 defaultValue: 1,
                 apply(current, degree, resource) {

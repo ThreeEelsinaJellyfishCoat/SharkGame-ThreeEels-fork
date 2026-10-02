@@ -33,7 +33,7 @@ SharkGame.Aspects = {
     },
     pathOfIndustry: {
         posX: 450,
-        posY: 450,
+        posY: 350,
         width: 40,
         height: 40,
 
@@ -65,8 +65,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "init") {
+        apply(when) {
+            if (when === "init") {
                 res.applyModifier("pathOfIndustry", "shark", this.level + 1);
                 res.applyModifier("pathOfIndustry", "diver", this.level + 1);
                 res.applyModifier("pathOfIndustry", "scientist", this.level + 1);
@@ -231,6 +231,123 @@ SharkGame.Aspects = {
             tree.handleClickedAspect(this);
         },
     },
+    /* pathOfLoyalty: { // alt name: pathOfResearch
+        posX: 450,
+        posY: 450,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Path of Loyalty",
+        description: "Good leadership attracts lasting effects, and undying loyalty.",
+// prev desc: "Knowledge leads to curiosity, and curiosity leads to progress, and progress leads to ascension."
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the income of " +
+                sharktext.getResourceName("sand", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                " by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {
+            if (!SharkGame.Aspects.pathOfEnlightenment.level) {
+                return "???";
+            }
+            if (gateway.completedWorlds.length < 3) {
+                return "Scout at least two worlds to unlock this aspect.";
+            }
+        },
+        prerequisites: ["apotheosis"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("pathOfLoyalty", "sand", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "ray", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "sandDigger", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "eel", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "sifter", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "urchin", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "miller", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "pulveriser", this.level + 1);
+            }
+        },
+    }, */
+    /* arcaneAssistance: {
+        posX: 500,
+        posY: 550,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Arcane Assistance",
+        description: "placeholder",
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Start with <strong>" +
+                1 * 2 ** level +
+                "</strong> " +
+                sharktext.getResourceName("sacrifice", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                ". Each world will receive different resource boosts."
+            );
+        },
+        getUnlocked() {
+            if (!SharkGame.Aspects.pathOfEnlightenment.level) {
+                return "???";
+            }
+            // if (gateway.completedWorlds.includes("shrouded")) { // find out a way to say 'not includes'
+		// return "Complete the Shrouded worldtype to unlock this aspect.";
+            // }
+            if (gateway.completedWorlds.length < 3) {
+                return "Scout at least two worlds to unlock this aspect.";
+            }
+        },
+        prerequisites: ["pathOfLoyalty"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init" && res.getResource("kelpAspectSacrifice") === 0 && !SharkGame.flags.arcaneAssistanceApplied) {
+                const base = 1 * 2 ** this.level;
+                switch (world.worldType) {
+                    case "shrouded":
+                        res.changeResource("jellyAspectSacrifice", base);
+                        break;
+                    case "haven":
+                        res.changeResource("coralAspectSacrifice", base);
+                        break;
+                    case "volcanic":
+                        res.changeResource("volcanicAspectSacrifice", base);
+                        break;
+                    case "tempestuous":
+                        res.changeResource("seagrassAspectSacrifice", base);
+                        break;
+                    case "marine":
+                        res.changeResource("clamAspectSacrifice", base);
+                        break;
+                    case "abandoned":
+                        res.changeResource("spongeAspectSacrifice", base);
+                        break;
+                    case "shore":
+                        res.changeResource("seagrassAspectSacrifice", base);
+                        break;
+		    default:
+                        res.changeResource("kelpAspectSacrifice", base);
+                }
+                SharkGame.flags.arcaneAssistanceApplied = true;
+            }
+        },
+    }, */
     pathOfTime: {
         posX: 450,
         posY: 250,
@@ -265,8 +382,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "init" && res.getResource("crab") === 0 && !SharkGame.flags.pathOfTimeApplied) {
+        apply(when) {
+            if (when === "init" && res.getResource("crab") === 0 && !SharkGame.flags.pathOfTimeApplied) {
                 const base = 25 * 2 ** this.level;
                 switch (world.worldType) {
                     case "shrouded":
@@ -279,6 +396,50 @@ SharkGame.Aspects = {
             }
         },
     },
+    /* dancingLeaves: {
+        posX: 330,
+        posY: 440,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Dancing Leaves",
+        description: "Faceless. Mindless. Boundless.",
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the income of " +
+                sharktext.getResourceName("kelp", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+		" and " +
+                sharktext.getResourceName("seagrass", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                " by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {},
+        prerequisites: ["apotheosis"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("dancingLeaves", "kelp", this.level + 1);
+                res.applyModifier("dancingLeaves", "seagrass", this.level + 1);
+                // res.applyModifier("dancingLeaves", "planter", this.level + 1);
+                // res.applyModifier("dancingLeaves", "stormgoer", this.level + 1);
+                // res.applyModifier("dancingLeaves", "stabilizer", this.level + 1);
+                // res.applyModifier("dancingLeaves", "seagrassFarm", this.level + 1);
+                // res.applyModifier("dancingLeaves", "urchin", this.level + 0.5);
+                // res.applyModifier("dancingLeaves", "connoisseur", this.level + 1);
+                // res.applyModifier("dancingLeaves", "seagrassPicker", this.level + 1);
+                // res.applyModifier("dancingLeaves", "shoreQueller", this.level + 0.25);
+            }
+        },
+    }, */
     coordinatedCooperation: {
         posX: 150,
         posY: 200,
@@ -305,8 +466,8 @@ SharkGame.Aspects = {
         },
     },
     syntheticTransmutation: {
-        posX: 530,
-        posY: 550,
+        posX: 550,
+        posY: 450,
         width: 40,
         height: 40,
 
@@ -327,8 +488,8 @@ SharkGame.Aspects = {
         },
     },
     amorphousAssembly: {
-        posX: 575,
-        posY: 650,
+        posX: 590,
+        posY: 550,
         width: 40,
         height: 40,
 
@@ -350,7 +511,7 @@ SharkGame.Aspects = {
     },
     mechanicalManifestation: {
         posX: 630,
-        posY: 510,
+        posY: 485,
         width: 40,
         height: 40,
 
@@ -371,8 +532,8 @@ SharkGame.Aspects = {
         },
     },
     thePlan: {
-        posX: 550,
-        posY: 375,
+        posX: 565,
+        posY: 380,
         width: 40,
         height: 40,
 
@@ -435,8 +596,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "init") {
+        apply(when) {
+            if (when === "init") {
                 _.each(SharkGame.ResourceCategories.breeders.resources, (breeder) => {
                     res.applyModifier("constructedConception", breeder, this.level + 1);
                 });
@@ -472,8 +633,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "levelUp") {
+        apply(when) {
+            if (when === "levelUp") {
                 if (_.isUndefined(SharkGame.persistentFlags.destinyRolls)) {
                     SharkGame.persistentFlags.destinyRolls = this.level;
                 } else {
@@ -509,8 +670,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "levelUp" && SharkGame.Settings.current.doAspectTable === "table") {
+        apply(when) {
+            if (when === "levelUp" && SharkGame.Settings.current.doAspectTable === "table") {
                 SharkGame.Button.makeButton("respecModeButton", "respec mode", $("#aspectTreeNavButtons"), tree.toggleRefundMode);
                 SharkGame.Button.makeButton("respecButton", "respec all", $("#aspectTreeNavButtons"), () => {
                     if (confirm("Are you sure you want to respec all refundable aspects?")) {
@@ -548,7 +709,7 @@ SharkGame.Aspects = {
             tree.handleClickedAspect(this);
         },
     },
-    /*     keenEyesight: {
+    /* keenEyesight: {
         posX: 0,
         posY: 50,
         width: 40,
@@ -648,8 +809,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(whenEvent) {
-            if (whenEvent === "init") {
+        apply(when) {
+            if (when === "init") {
                 SharkGame.Lab.addUpgrade("statsDiscovery");
                 if (this.level > 1) {
                     SharkGame.TabHandler.discoverTab("lab");

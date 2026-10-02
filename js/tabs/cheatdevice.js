@@ -1,8 +1,8 @@
 "use strict";
 SharkGame.CheatsAndDebug = {
     tabId: "cheats",
-    tabDiscovered: false,
-    tabSeen: false,
+    tabDiscovered: true,
+    tabSeen: true,
     tabName: "Cheaty Powers",
     tabBg: "img/bg/bg-gate.png",
 
@@ -561,7 +561,7 @@ SharkGame.CheatsAndDebug = {
         if (cad.speed === 512) {
             return "I think you've had enough.";
         }
-        let msg;
+        let msg = "";
         cad.speed *= 2;
         switch (cad.speed) {
             case 2:
@@ -584,7 +584,7 @@ SharkGame.CheatsAndDebug = {
         if (cad.speed === 1 / 512) {
             return "I think that's slow enough, don't you?";
         }
-        let msg;
+        let msg = "";
         cad.speed *= 0.5;
         switch (cad.speed) {
             case 1 / 2:
