@@ -55,6 +55,14 @@ SharkGame.Sprites = {
             h: 100,
         },
     },
+    "planets/shore": {
+        frame: {
+            x: 0,
+            y: 800,
+            w: 100,
+            h: 100,
+        },
+    },
     "planets/tempestuous": {
         frame: {
             x: 100,
