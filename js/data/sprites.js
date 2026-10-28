@@ -463,6 +463,14 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
+    "actions/getMudskipper": {
+        frame: {
+            x: 100,
+            y: 800,
+            w: 50,
+            h: 50,
+        },
+    },
     "actions/getNurse": {
         frame: {
             x: 450,
