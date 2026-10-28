@@ -101,6 +101,7 @@ SharkGame.Puns = {
         fish: [
             "A shark detective was inspecting the crime scene. He felt sus-fish-ous.",
             "Clownfish aren't popular. They taste funny.",
+            "Efficiency? Yeah, that's where the fish usually is.",
         ],
         // crystal: [
         // "Placeholder :D",
