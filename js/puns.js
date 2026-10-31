@@ -69,32 +69,7 @@ SharkGame.Puns = {
     worldBased: {
         frigid: {
             messages: ["Did you hear about the urchin's pride on its cold resilience? It felt n-ice!"],
-        }, /*
-        volcanic: {
-            messages: [
-                "Placeholder :D",
-            ],
-            areRequirementsMet() {
-                return SharkGame.Upgrades.purchased.includes("thermalVents");
-            },
         },
-        shrouded: {},
-        abandoned: {
-            messages: ["Placeholder :D"],
-        },
-        haven: {
-            messages: ["Placeholder :D"],
-            areRequirementsMet() {
-                return SharkGame.Upgrades.purchased.includes("sunObservation");
-            },
-        },
-        marine: {},
-        tempestuous: {
-            messages: ["Placeholder :D"],
-        },
-        shore: {
-            messages: ["Placeholder :D"],
-        }, */
     },
 
     resourceBased: {
@@ -102,82 +77,46 @@ SharkGame.Puns = {
             "A shark detective was inspecting the crime scene. He felt sus-fish-ous.",
             "Clownfish aren't popular. They taste funny.",
             "Efficiency? Yeah, that's where the fish usually is.",
+            "Why was the jackfish fined so harshly? Weeks of unpaid pike-ing tickets.",
         ],
-        // crystal: [
-        // "Placeholder :D",
-        // ],
+        // The hogfish rooted around the sand, uncovering its target. “You’re under awrasst!” he shouted.
+        // “Please! I’m a single fish with a fish family to feed!” exclaimed the snail thief, “A fish child! A catfish, a dogf-“
+        // “Stop refishting!!” responded the offisher, as he unloaded 28 rounds into the slippery d**k point blank with extreme prejudice.
+        // -- courtesy of Morally Unethical
         sand: [
             "No matter who's dead, the seafloor always sands its regards.",
-        ], /*
-        kelp: [
-            "Placeholder :D",
-        ],
-        driftwood: [
-            "Placeholder :D",
-        ],
-        seagrass: [
-            "Placeholder :D",
-        ],
-        coral: [
-            "Placeholder :D",
-        ],
-        sponge: [
-            "Placeholder :D",
         ],
         tar: [
-            "Placeholder :D",
+            "This black clogging gunk is absolutely tarrifying.",
         ],
-        ice: [
-            "Placeholder :D",
+        seaApple: [
+            "'I don’t eel too good, doc,' said the pearlfish.<br>'That was terrible,' responded the sea cucumber, 'and you aren’t even sick. Get out of my orifice.'",
         ],
-        roughSand: [
-            "Placeholder :D",
-        ], */
         shark: [
             "A shark detective was inspecting the crime scene. He felt sus-fish-ous.",
         ],
         ray: [
             "To a ray, stinging is pretty mantastic.",
-        ], /*
-        crab: [
-            "Placeholder :D",
         ],
-        octopus: [
-            "Placeholder :D",
-        ],
-        dolphin: [
-            "Placeholder :D",
-        ], */
         whale: [
             "Being large means you can catch a lot of fish, which is whaley good.",
-        ], /*
-        urchin: [
-            "Placeholder :D",
         ],
-        squid: [
-            "Placeholder :D",
-        ],
-        lobster: [
-            "Placeholder :D",
-        ], */
         shrimp: [
             "The shrimp traitor was surrounded. He couldn’t scampi away this time.",
         ],
         eel: [
             "Attempting to breathe underwater is eel-advised.",
+            "Electric eels are so agreeable, they always take the path of least refishtance.",
+            "Electric eels are usually up to date on current events. Shocking, I know.",
         ],
-        // chimaera: [
-        // "Placeholder :D",
-        // ],
         billfish: [
             "To a shark, a nose-spear would be quite unwieldy. The billfish say it's great. They have a point.",
         ],
-        // mudskipper: [
-        // "Placeholder :D",
-        // ],
         caracara: [
             "A caracara got scammed of all her fish. She never knew she could be so gull-ible.", // this actually doesn't work as caracaras are falcons, not gulls -- Three Eels
         ],
+        // one to add if we ever get sea snakes:
+        // "The sea snake pirate was never a fan of the rickety cannons. He was always wary lest they blow the ship to slithereens."
 
     },
 
