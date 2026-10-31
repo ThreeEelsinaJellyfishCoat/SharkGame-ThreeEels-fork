@@ -994,6 +994,35 @@ SharkGame.Aspects = {
             }
         },
     },
+    beastAndBloom: {
+        posX: 315,
+        posY: 500,
+        width: 40,
+        height: 40,
+
+        max: 4,
+        level: 0,
+        name: "Beast and Bloom",
+        description: "There's a lot to learn from simplicity.",
+        core: true,
+        getCost(level) {
+            return 2 * level + 3;
+        },
+        getEffect(level) {
+            return (
+                "Gain <strong>" +
+				(level + 1) +
+                "x</strong> more " +
+                sharktext.getResourceName("science", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                " from dissections."
+            );
+        },
+        getUnlocked() {},
+        prerequisites: ["dancingLeaves"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+    },
     nativeKnowledge: {
         posX: 444,
         posY: 595,
