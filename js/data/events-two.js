@@ -123,8 +123,8 @@ SharkGame.Events = {
                 sandstorm.baseIncome = {};
                 sandstorm.income = {};
             }
-	    sandstorm.baseIncome.roughSand = Math.min(1, (SharkGame.flags.sandstorm.roughSand - res.getResource("roughSand")) / 5)
-	    res.reapplyModifiers("world", "roughSand");
+            sandstorm.baseIncome.roughSand = Math.min(1, (SharkGame.flags.sandstorm.roughSand - res.getResource("roughSand")) / 5);
+            res.reapplyModifiers("world", "roughSand");
             return true;
         },
     },
@@ -142,8 +142,8 @@ SharkGame.Events = {
         },
         trigger() {
             SharkGame.flags.sandstorm = {
-		roughSand: 10
-	    };
+                roughSand: 10,
+            };
         },
     },
 
@@ -175,14 +175,14 @@ SharkGame.Events = {
         trigger() {
             if (!SharkGame.flags.raiderMessage) {
                 SharkGame.flags.raiderMessage = true;
-		log.addMessage("Raiders are stealing your resources. They plunge down from above the water.");
+                log.addMessage("Raiders are stealing your resources. They plunge down from above the water.");
             }
             if (!SharkGame.flags.raiders) {
                 SharkGame.flags.raiders = {
                     fish: -1,
                     crystal: -0.5,
-		    seagrass: -0.5,
-		    driftwood: -2,
+                    seagrass: -0.5,
+                    driftwood: -2,
                 };
             }
 
@@ -253,14 +253,14 @@ SharkGame.Events = {
         trigger() {
             if (!SharkGame.flags.raiderMessage) {
                 SharkGame.flags.raiderMessage = true;
-		log.addMessage("Raiders are stealing your resources. They plunge down from above the water.");
+            log.addMessage("Raiders are stealing your resources. They plunge down from above the water.");
             }
             if (!SharkGame.flags.raiders) {
                 SharkGame.flags.raiders = {
                     fish: -1,
                     crystal: -0.5,
-		    seagrass: -0.5,
-		    driftwood: -2,
+                    seagrass: -0.5,
+                    driftwood: -2,
                 };
             }
 
@@ -750,4 +750,4 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
- };
+};
