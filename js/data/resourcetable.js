@@ -133,16 +133,20 @@ SharkGame.ResourceTable = {
 		name: "knowledge",
 		singleName: "knowledge",
 		desc: "Fragments of thought.",
-		color: "#17BFD1",
-		value: 5,
+		color: "#96FFD3",
+		value: 1000,
 	},
-	joy: { // only accessible with the cheats
-		name: "joy",
-		singleName: "joy",
-		desc: "Distributed dopamine.",
-		color: "#FFDF22",
-		value: 5,
-	},
+
+    coalescer: { // idea for a dolphin machine from base
+        name: "coalescers",
+        singleName: "coalescer",
+        color: "#D2F9E9",
+        income: {
+            knowledge: 0.001,
+        },
+        value: 200000,
+        forceIncome: true,
+    },
 
 
     // ASPECT SACRIFICES (for Arcane Assistance aspect)
@@ -1283,18 +1287,7 @@ SharkGame.ResourceTable = {
 
     // MACHINES
 
-    /* coalescer: {
-        name: "coalescers",
-        singleName: "coalescer",
-        color: "#D2F9E9",
-        income: {
-            knowledge: 0.001,
-        },
-        value: 200000,
-        forceIncome: true,
-    },
-
-    crusher: {
+    /* crusher: {
         name: "stone crushers",
         singleName: "stone crusher",
         color: "#75677A",
@@ -1509,13 +1502,6 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
-	joy: {
-		multiply: {
-			shark: 0.001,
-			ray: 0.001,
-			crab: 0.001,
-		},
-	},
     turtleTransporter: {
         multiply: {
             snail: 0.01,
@@ -1698,7 +1684,7 @@ SharkGame.ResourceCategories = {
 			"Who knows? It might come back. Thoughts do that sometimes.",
 			"They're strange things, thoughts and emotions. But they drive us all the same.",
 		],
-		resources: ["knowledge", "joy"],
+		resources: ["knowledge"],
 	},
     scientific: {
         name: "Science",
