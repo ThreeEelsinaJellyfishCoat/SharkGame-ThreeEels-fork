@@ -268,7 +268,7 @@ SharkGame.Aspects = {
         },
         apply(when) {
             if (when === "init") {
-                res.applyModifier("aspectResourceIncomeBoost", "sand", this.level + 1);
+                res.applyModifier("theTokenForResources", "sand", this.level + 1);
             }
         },
     },
@@ -322,9 +322,6 @@ SharkGame.Aspects = {
                         break;
                     case "abandoned":
                         res.changeResource("spongeAspectSacrifice", base);
-                        break;
-                    case "shore":
-                        res.changeResource("seagrassAspectSacrifice", base);
                         break;
 		            default:
                         res.changeResource("kelpAspectSacrifice", base);
@@ -462,7 +459,7 @@ SharkGame.Aspects = {
         max: 2,
         level: 0,
         name: "Mechanical Manifestation",
-        description: "Given raw, etherial energy, machines can make more with less.",
+        description: "Given raw, ethereal energy, machines can make more with less.",
         getCost(level) {
             return 2 + 2 * level;
         },
@@ -977,8 +974,8 @@ SharkGame.Aspects = {
         },
         apply(when) {
             if (when === "init") {
-                res.applyModifier("aspectResourceIncomeBoost", "kelp", this.level + 1);
-                res.applyModifier("aspectResourceIncomeBoost", "seagrass", this.level + 1);
+                res.applyModifier("theTokenForResources", "kelp", this.level + 1);
+                res.applyModifier("theTokenForResources", "seagrass", this.level + 1);
             }
         },
     },
@@ -1058,8 +1055,6 @@ SharkGame.Aspects = {
 				res.applyModifier("pathOfIndustry", "snail", this.level + 1);
 				res.applyModifier("pathOfIndustry", "turtle", this.level + 1);
 				res.applyModifier("pathOfIndustry", "echo", this.level + 1);
-                // res.applyModifier("pathOfIndustry", "mudskipper", this.level + 1);
-                // res.applyModifier("pathOfIndustry", "caracara", this.level + 1);
             }
         },
     },
@@ -1100,9 +1095,6 @@ SharkGame.Aspects = {
                 res.applyModifier("pathOfIndustry", "seabedStripper", this.level + 1);
                 res.applyModifier("pathOfIndustry", "calciniumConverter", this.level + 1);
                 res.applyModifier("pathOfIndustry", "clamScavenger", this.level + 1);
-                // res.applyModifier("pathOfIndustry", "shoreQueller", this.level + 1);
-                // res.applyModifier("pathOfIndustry", "driftwoodSnarer", this.level + 1);
-                // res.applyModifier("pathOfIndustry", "hardbarkSmith", this.level + 1);
                 res.applyModifier("pathOfIndustry", "shoveler", this.level + 1);
                 res.applyModifier("pathOfIndustry", "farmer", this.level + 1);
                 res.applyModifier("pathOfIndustry", "researcher", this.level + 1);
