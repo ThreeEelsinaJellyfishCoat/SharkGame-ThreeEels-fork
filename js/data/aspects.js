@@ -231,7 +231,7 @@ SharkGame.Aspects = {
             tree.handleClickedAspect(this);
         },
     },
-    pathOfLoyalty: { // old name concept: pathOfResearch
+    pathOfLoyalty: {
         posX: 450,
         posY: 450,
         width: 40,
@@ -241,7 +241,6 @@ SharkGame.Aspects = {
         level: 0,
         name: "Path of Loyalty",
         description: "Good leadership attracts lasting effects, and undying loyalty.",
-	    // old desc concept: "Knowledge leads to curiosity, and curiosity leads to progress, and progress leads to ascension."
         getCost(level) {
             return 3 * level + 2;
         },
